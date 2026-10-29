@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Práctica Calificada 3 – CSS | Antonio Arroyo Paz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top" aria-label="Preguntas">
+  <a href="#p1">Pregunta 1</a><a href="#p2">Pregunta 2</a><a href="#p3">Pregunta 3</a><a href="#p4">Pregunta 4</a>
+</nav>
+<header class="hero">
+  <h1>Hojas de Estilo en Cascada – Práctica Calificada N.º 3</h1>
+  <p>Alumno: Arroyo Paz, Antonio · UTP Arequipa · Ing. de Sistemas e Informática · Sección 47318</p>
+</header>
+
+<!-- ===================== PREGUNTA 1 ===================== -->
+<section class="q rb" id="p1"><div class="in">
+  <h2>Pregunta 1 · Interfaz interactiva</h2>
+  <p class="lead">Menú, tarjetas de productos, botonera y formulario con transiciones suaves (pasa el mouse o toca).</p>
+  <nav class="nav"><a href="#p1">Inicio</a><a href="#p1">Productos</a><a href="#p1">Ofertas</a><a href="#p1">Contacto</a></nav>
+  <div class="grid">
+    <article class="prod"><div class="ico">🎧</div><b>Audífonos Pro</b><span>S/ 189.00 · Sonido envolvente</span><br><button class="btn">Agregar</button></article>
+    <article class="prod"><div class="ico">⌨️</div><b>Teclado Mecánico</b><span>S/ 249.00 · Switch rojo</span><br><button class="btn">Agregar</button></article>
+    <article class="prod"><div class="ico">🖱️</div><b>Mouse Gamer</b><span>S/ 99.00 · 12 000 DPI</span><br><button class="btn">Agregar</button></article>
+    <article class="prod"><div class="ico">💻</div><b>Laptop 15"</b><span>S/ 2 899.00 · 16 GB RAM</span><br><button class="btn">Agregar</button></article>
+  </div>
+  <form class="contact" onsubmit="return false">
+    <h3>Contáctanos</h3>
+    <div class="field"><input type="text" placeholder="Nombre" aria-label="Nombre"></div>
+    <div class="field"><input type="email" placeholder="Correo" aria-label="Correo"></div>
+    <div class="field"><textarea rows="3" placeholder="Mensaje" aria-label="Mensaje"></textarea></div>
+    <div><button class="btn" type="submit">Enviar mensaje</button></div>
+  </form>
+</div></section>
+
+<!-- ===================== PREGUNTA 2 ===================== -->
+<section class="q bb" id="p2"><div class="in">
+  <h2>Pregunta 2 · Galería de destinos turísticos</h2>
+  <p class="lead">Tarjetas con transformaciones 3D: al pasar el mouse (o enfocar con teclado) se voltean y muestran el detalle.</p>
+  <div class="grid">
+    <div class="card" tabindex="0"><div class="inner"><div class="face front"><div class="e">🌋</div><b>Volcán Misti</b><small>Arequipa</small></div><div class="face back"><b>Volcán Misti</b><p>Símbolo de la ciudad blanca, 5 822 m s. n. m.</p></div></div></div>
+    <div class="card" tabindex="0"><div class="inner"><div class="face front"><div class="e">🦅</div><b>Cañón del Colca</b><small>Arequipa</small></div><div class="face back"><b>Cañón del Colca</b><p>Hogar del cóndor andino, uno de los más profundos del mundo.</p></div></div></div>
+    <div class="card" tabindex="0"><div class="inner"><div class="face front"><div class="e">⛪</div><b>Santa Catalina</b><small>Arequipa</small></div><div class="face back"><b>Monasterio de Santa Catalina</b><p>Ciudadela religiosa de sillar con calles de colores.</p></div></div></div>
+    <div class="card" tabindex="0"><div class="inner"><div class="face front"><div class="e">🏔️</div><b>Machu Picchu</b><small>Cusco</small></div><div class="face back"><b>Machu Picchu</b><p>Ciudadela inca, maravilla del mundo moderno.</p></div></div></div>
+    <div class="card" tabindex="0"><div class="inner"><div class="face front"><div class="e">🦙</div><b>Reserva Salinas</b><small>Arequipa</small></div><div class="face back"><b>Salinas y Aguada Blanca</b><p>Vicuñas, lagunas y paisajes altoandinos.</p></div></div></div>
+    <div class="card" tabindex="0"><div class="inner"><div class="face front"><div class="e">🌊</div><b>Lago Titicaca</b><small>Puno</small></div><div class="face back"><b>Lago Titicaca</b><p>El lago navegable más alto del mundo.</p></div></div></div>
+  </div>
+</div></section>
+
+<!-- ===================== PREGUNTA 3 ===================== -->
+<section class="q rb" id="p3"><div class="in">
+  <div class="orb"></div><div class="orb"></div><div class="orb"></div>
+  <h2>Pregunta 3 · Reloj animado solo con CSS</h2>
+  <p class="lead">Reloj hecho con formas CSS que funciona por sí mismo (sin intervención). Un pequeño script solo lo sincroniza con la hora actual; las animaciones son 100 % CSS.</p>
+  <div class="stage">
+    <div class="clock" id="clock"><div class="ticks"></div><div class="hand h-h"></div><div class="hand h-m"></div><div class="hand h-s"></div><div class="dot"></div></div>
+    <div class="loader" aria-hidden="true"><i></i><i></i><i></i></div>
+    <p class="hint">Extra: al pasar el mouse sobre el reloj, el segundero se acelera.</p>
+  </div>
+</div></section>
+
+<!-- ===================== PREGUNTA 4 ===================== -->
+<section class="q bb" id="p4"><div class="in">
+  <h2>Pregunta 4 · Glassmorphism con @supports y fallbacks</h2>
+  <p class="lead">Paneles de vidrio (backdrop-filter) con alternativa si el navegador no lo soporta, valores de reserva, prefijos y respeto a prefers-reduced-motion.</p>
+  <div class="glass-wrap"><div class="grid">
+    <div class="glass"><h3>Perfil</h3><p>Antonio Arroyo Paz<br>Ing. de Sistemas</p></div>
+    <div class="glass"><h3>Cursos</h3><p>CSS, HTML y JavaScript. Ciclo 2026-II.</p></div>
+    <div class="glass"><h3>Contacto</h3><p>Arequipa, Perú</p></div>
+  </div></div>
+  <table>
+    <tr><th>Propiedad / regla</th><th>Uso</th><th>Soporte (según caniuse.com / MDN)</th><th>Si no se soporta</th></tr>
+    <tr><td>backdrop-filter</td><td>Efecto vidrio</td><td class="ok">Chrome 76+, Edge 79+, Safari 9+ (con -webkit-), Firefox 103+</td><td>Fondo semitransparente más oscuro (fallback)</td></tr>
+    <tr><td>aspect-ratio</td><td>Proporción 4/3</td><td class="ok">Chrome 88+, Firefox 89+, Safari 15+</td><td>@supports not → min-height</td></tr>
+    <tr><td>clamp()</td><td>Tipografía fluida</td><td class="ok">Chrome 79+, Firefox 75+, Safari 13.1+</td><td>font-size fijo declarado antes</td></tr>
+    <tr><td>@supports</td><td>Detección de funciones</td><td class="ok">Prácticamente todos los navegadores modernos</td><td>Se ignora el bloque (queda el fallback)</td></tr>
+    <tr><td>prefers-reduced-motion</td><td>Reduce animaciones</td><td class="ok">Chrome 74+, Firefox 63+, Safari 10.1+</td><td>Se muestran animaciones normales</td></tr>
+  </table>
+  <p class="lead" style="margin-top:.8rem">Pruebas hechas en Chrome y Firefox (escritorio); datos de compatibilidad consultados en caniuse.com y MDN.</p>
+</div></section>
+
+<footer>Práctica Calificada N.º 3 · Desarrollado con apoyo de IA (Claude) según autorización del docente. Rojo · Negro · Azul.</footer>
+
+<script>
+/* Sincroniza el reloj con la hora actual (solo desplaza el inicio de las animaciones CSS) */
+(function(){
+  var d=new Date(),s=d.getSeconds(),m=d.getMinutes()*60+s,h=(d.getHours()%12)*3600+m;
+  var c=document.getElementById('clock');
+  c.querySelector('.h-s').style.animationDelay=-s+'s';
+  c.querySelector('.h-m').style.animationDelay=-m+'s';
+  c.querySelector('.h-h').style.animationDelay=-h+'s';
+})();
+</script>
+</body>
+</html>
