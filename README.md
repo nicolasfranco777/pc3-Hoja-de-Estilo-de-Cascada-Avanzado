@@ -4,13 +4,6 @@
 **Curso:** 1000005158 – Hojas de Estilo en Cascada (UTP, Arequipa) · Sección 47318 · Aula BS109
 **Fecha:** 29 de octubre de 2026
 
-## Uso de IA
-El docente autorizó el uso de IA para esta práctica. Se utilizó **Claude (Anthropic)** para generar el código. Este archivo documenta el prompt usado.
-
-## Prompt utilizado
-Se adjuntó una foto del enunciado del examen y se escribió:
-
-> haz todo, el profesor nos dijo que usemos ia y hagamos un readme aparte con el prompt, necesito que el trabajo se pueda entregar con un link y se visualice cada pregunta, los colores para decorar son rojo, negro y azul, digamos una pregunta con la página rojo y negro y la otra con azul y negro y así sucesivamente.
 
 ### Enunciado transcrito (foto adjunta)
 1. **Pregunta 1 (5 pts):** Diseña una pequeña interfaz de tu elección (menú de navegación, lista de tarjetas de productos, botonera, formulario de contacto, etc.) en la que los elementos interactivos respondan al usuario con transiciones suaves.
